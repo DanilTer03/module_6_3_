@@ -1,4 +1,4 @@
-class Horse:
+gleclass Horse:
     sound = 'Frrr'  # Звук, который издает лошадь
 
     def __init__(self):
@@ -31,7 +31,7 @@ class Pegasus(Horse, Eagle):
         return self.x_distance, self.y_distance  # Возврат текущего положения
 
     def voice(self):
-        print(self.sound)  # Вывод звука
+        print(Eagle.sound)  # Вывод звука
 
 
 # Пример работы программы
@@ -45,4 +45,3 @@ print(p1.get_pos())
 
 p1.voice()
 
-print(Pegasus.mro())
